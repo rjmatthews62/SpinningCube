@@ -14,7 +14,9 @@ public class CannonBall : MonoBehaviour
         transform.Translate(Vector3.up*10);
         transform.Rotate(Vector3.left*45);
         Vector3 v = transform.rotation * Vector3.forward;
-        body.velocity=v*20f;
+        body.velocity=v*40f;
+        TrailRenderer tr=GetComponent<TrailRenderer>();
+        tr.Clear();
     }
 
 }
