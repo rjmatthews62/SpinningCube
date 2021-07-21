@@ -18,6 +18,10 @@ public class MenuHandler : MonoBehaviour
         Application.Quit(0);
     }
 
+    public void LoadTerrain() {
+        SceneManager.LoadScene("RandomTerrain",LoadSceneMode.Single);
+    }
+
     public void LoadMenu() {
         SceneManager.LoadScene("Menu",LoadSceneMode.Single);
     }
